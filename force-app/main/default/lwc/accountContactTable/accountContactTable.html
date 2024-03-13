@@ -1,0 +1,32 @@
+
+<!-- accountContactTable.html -->
+<template>
+    <div class="slds-m-around_medium">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="slds-cell-wrap" scope="col">
+                        Account Name
+                    </th>
+                    <th class="slds-cell-wrap" scope="col">
+                        Contact Name
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={accountData} for:item="account">
+                    <tr key={account.Id}>
+                        <td data-label="Account Name" class="slds-cell-wrap">
+                            {account.Name}
+                        </td>
+                        <td data-label="Contact Name" class="slds-cell-wrap">
+                            {account.Contacts}
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+</template>
+
+

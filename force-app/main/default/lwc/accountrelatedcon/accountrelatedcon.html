@@ -1,0 +1,14 @@
+
+<template>
+    <lightning-card title="Account and Related Contacts">
+        <div class="slds-m-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={accountData}
+                columns={columns}
+                onrowaction={handleRowAction}
+            >
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
